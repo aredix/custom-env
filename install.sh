@@ -59,6 +59,19 @@ wget https://raw.githubusercontent.com/aredix/ssh/master/deb2tarxz.sh
 mv deb2tarxz.sh tools/
 clear
 
+echo "Téléchargement de deb2tarxz4lib"
+sleep 1 
+wget https://raw.githubusercontent.com/aredix/ssh/master/deb2tarxz4lib.sh
+mv deb2tarxz4lib.sh tools/
+clear
+
+
+echo "Téléchargement de deb2targz4lib"
+sleep 1 
+wget https://raw.githubusercontent.com/aredix/ssh/master/deb2targz4lib.sh
+mv deb2targz4lib.sh tools/
+clear
+
 echo "Téléchargement de Htop"
 sleep 1
 wget https://github.com/aredix/ssh/raw/master/htop.deb
