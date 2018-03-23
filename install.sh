@@ -24,6 +24,8 @@ echo "L'installation débute"
 sleep 2
 
 echo "création des différents répertoires racines"
+mkdir .env
+cd .env
 mkdir tools
 mkdir share
 mkdir lib
