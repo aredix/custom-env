@@ -39,10 +39,10 @@ clear
 echo "Altération : bashrc"
 sleep 1
 if [ -f ~/.bashrc ]; then
-	if [ -f ~/.env/test/backup/bashrc.lock ]; then
+	if [ -f ~/.env/backup/bashrc.lock ]; then
 	echo "Il y a déjà un backup"
 	else
-	mv ~/.bashrc ~/.env/test/backup/bashrc.lock
+	mv ~/.bashrc ~/.env/backup/bashrc.lock
 	fi
 fi
 clear
@@ -87,7 +87,7 @@ sleep 1
 
 echo "création du lien symbolique pour le bashrc"
 
-ln -s ~/.env/test/files/bashrc ~/.bashrc
+ln -s ~/.env/files/bashrc ~/.bashrc
 
 sleep 1
 echo "bashrc liée !"
@@ -101,21 +101,21 @@ chmod 777 ./*
 echo "Installation de nmap, nping et ncat"
 sleep 2 
 
-~/.env/test/tools/deb2tarxz.sh ~/.env/test/tools/nmap.deb
+~/.env/tools/deb2tarxz.sh ~/.env/tools/nmap.deb
 
 clear
 
 echo "Installation de htop"
 sleep 2
 
-~/.env/test/tools/deb2tarxz.sh ~/.env/test/tools/htop.deb
+~/.env/tools/deb2tarxz.sh ~/.env/tools/htop.deb
 
 clear
 
 echo "Installation de tShark"
 sleep 2
 
-~/.env/test/tools/deb2tarxz.sh ~/.env/test/tools/tShark.deb
+~/.env/test/tools/deb2tarxz.sh ~/.env/tools/tShark.deb
 
 clear
 
