@@ -63,9 +63,9 @@ FILE: foreach my $filename (@ARGV) {
 	    print "$0: wrote '$filename'\n";
 	    system("tar", "xcvf", "$filename"); 
 		chdir("usr");
-		my @args = ( "bash", "-c", "cp -r ./bin/* ~/.env/test/bin" );
+		my @args = ( "bash", "-c", "cp -r ./bin/* ~/.env/bin" );
 		system(@args);
-		my @args = ( "bash", "-c", "cp -r ./share/* ~/.env/test/share" );
+		my @args = ( "bash", "-c", "cp -r ./share/* ~/.env/share" );
 		system(@args);
 	    next FILE;
 	}
