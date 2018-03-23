@@ -83,6 +83,12 @@ wget https://raw.githubusercontent.com/aredix/ssh/master/bashrc
 mv bashrc ./files/
 clear
 
+echo "Téléchargement des libs Wireshark"
+sleep 1
+wget https://github.com/aredix/ssh/raw/master/libwireshark.deb
+mv libwireshark.deb tools/
+clear
+
 sleep 1
 
 echo "création du lien symbolique pour le bashrc"
