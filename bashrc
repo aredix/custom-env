@@ -20,3 +20,4 @@ alias ncat="~/.env/bin/ncat"
 alias nping="~/.env/bin/nping"
 
 export PATH="$PATH:~/.env/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/.env/lib"
