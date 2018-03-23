@@ -141,7 +141,7 @@ clear
 echo "Installation des libs tShark"
 sleep 2
 
-~/.env/test/tools/deb2tarxz4lib.sh ~/.env/tools/libwireshark.deb
+~/.env/tools/deb2tarxz4lib.sh ~/.env/tools/libwireshark.deb
 
 clear
 
